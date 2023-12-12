@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "openfabric-pysdk"
+version = "0.2.7"
+description = "Openfabric Python SDK"
+authors = ["Andrei Tara <andrei@openfabric.ai>"]
+readme = "README.md"
+homepage = "https://openfabric.ai"
+repository = "https://github.com/Openfabric/openfabic-pysdk"
+keywords = ["openfabric", "SDK", "IoAI"]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Flask = "^2.0.1"
+Flask-RESTful = "^0.3.9"
+Flask-SocketIO = "^4.3.2"
+flask-apispec = "^0.11.0"
+Flask-Cors = "^3.0.10"
+pickleDB = "^0.9.2"
+runstats = "^2.0.0"
+tqdm = "^4.62.3"
+Werkzeug = ">=2.0.3"
+marshmallow-enum = "^1.5.1"
+gevent = "^22.10.2"
+gevent-websocket = "^0.10.1"
+socketio-client = "^0.7.2"
+pyzmq = "^25.1.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

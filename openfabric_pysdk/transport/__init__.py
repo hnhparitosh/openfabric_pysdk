@@ -1,0 +1,1 @@
+from .resource_descriptor import ResourceDescriptor
