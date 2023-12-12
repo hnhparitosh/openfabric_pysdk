@@ -12,7 +12,7 @@ try:
   if not hasattr(werkzeug_serving, 'run_with_reloader'):
     import werkzeug
     import werkzeug._reloader
-    werkzeug.serving.run_with_reloader = werkzeug._reloader
+    werkzeug.serving.run_with_reloader = werkzeug._reloader.run_with_reloader
 except:
   # Failed patching werkzeug.
   # Maybe something else is used
